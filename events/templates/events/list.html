@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>All Events</title>
+  </head>
+  <body>
+    <h1>All Events</h1>
+    <ul>
+      {% for event in events %}
+      <li>
+        ID: {{ event.id }}, Name: {{ event.name }}, Date: {{ event.date }},
+        Start Time: {{ event.start_time|date:"H:i A" }}
+      </li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>

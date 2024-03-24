@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calendar Details</title>
+  </head>
+  <body>
+    <h1>{{ calendar.name }}</h1>
+    <p>Description: {{ calendar.description }}</p>
+    <p>Start Date: {{ calendar.start_date|date:"Y-m-d" }}</p>
+    <p>End Date: {{ calendar.end_date|date:"Y-m-d" }}</p>
+  </body>
+</html>
